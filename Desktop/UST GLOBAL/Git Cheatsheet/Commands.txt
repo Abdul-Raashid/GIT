@@ -1,0 +1,104 @@
+VERSION CONTROL:
+helps manage changes to files
+helps teams manage changes, ensure code integrity, and collaborate effectively
+-----
+GitHub:
+
+version check:-
+git --version
+
+
+______
+name and email setup:-
+git config --global user.name "Tanush"
+git config --global user.email "tanushnimmagadda@gmail.com"
+______
+
+git repo initialization:- 
+git init
+______
+
+staging:-
+When you modify files in your working directory it holds the changes. 
+it is an intermediate area where you can prepare changes before committing them to the repository.
+git add command to stage those changes.
+
+staging files :-
+git add /git add .
+______
+
+undoing changes :-
+move back to a certain point in your commit history, which is useful for modifying your commit history, 
+undoing changes, or cleaning up commits.
+git reset is a Git command used to undo changes by resetting the current branch's history
+
+git reset readme.txt
+
+there are 3 types of stages resets in git . didn't explained in class. 
+______
+to see changes in staged and commit:
+git diff --staged
+it will display the changes that are staged for the next commit relative to the most recent commit.
+______
+
+committing:
+saving your staged changes to the local repository with a unique commit ID.
+
+git commit -m""
+______
+
+branch:
+
+to List all branches.
+git branch
+
+change to another branch.
+git checkout name of branch
+
+create new branch.
+git checkout -b name of branch
+______
+
+git merge :
+
+
+after changing into the branch 
+git checkout main
+
+merge the changes from another branch
+git merge branchname
+
+commenting merge
+git commit
+______
+
+Stash:
+temporarily save and retrieve changes while keeping your working directory clean.
+it will not commit changes to branch until u use apply.
+u can remove changes by using pop
+
+git stash
+
+git stash apply
+
+git stash pop
+
+______
+
+push:
+
+v have to add remote repo url to local repo.
+and push changes to remote repo.
+
+git remote add origin repo_url
+
+git push origin branch name
+______
+
+pull:
+
+v can pull changes made in remote repo and merge into local repo.
+git pull origin branch_name
+
+ 
+
